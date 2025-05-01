@@ -1,10 +1,91 @@
-19:02:06 **** Incremental Build of configuration Debug for project tdse-tp2_05-model_integration ****
+18:19:47 **** Incremental Build of configuration Debug for project tdse-tp2_05-model_integration ****
 make -j8 all 
-arm-none-eabi-size  tdse-tp2_05-model_integration.elf 
-   text	   data	    bss	    dec	    hex	filename
-  16076	    152	   2360	  18588	   489c	tdse-tp2_05-model_integration.elf
-Finished building: default.size.stdout
- 
+arm-none-eabi-gcc "../app/src/app.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../app/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"app/src/app.d" -MT"app/src/app.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/src/app.o"
+arm-none-eabi-gcc "../app/src/logger.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../app/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"app/src/logger.d" -MT"app/src/logger.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/src/logger.o"
+arm-none-eabi-gcc "../app/src/task_actuator.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../app/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"app/src/task_actuator.d" -MT"app/src/task_actuator.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/src/task_actuator.o"
+arm-none-eabi-gcc "../app/src/task_actuator_interface.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../app/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"app/src/task_actuator_interface.d" -MT"app/src/task_actuator_interface.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/src/task_actuator_interface.o"
+arm-none-eabi-gcc "../app/src/task_sensor.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../app/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"app/src/task_sensor.d" -MT"app/src/task_sensor.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/src/task_sensor.o"
+arm-none-eabi-gcc "../app/src/task_system.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../app/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"app/src/task_system.d" -MT"app/src/task_system.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/src/task_system.o"
+arm-none-eabi-gcc "../app/src/task_system_interface.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../app/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"app/src/task_system_interface.d" -MT"app/src/task_system_interface.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/src/task_system_interface.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../app/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../app/src/task_actuator.c:48:
+../app/inc/board.h:80:33: error: 'LD1_GPIO_Port' undeclared here (not in a function); did you mean 'LD2_GPIO_Port'?
+   80 | #define LED_B_PORT              LD1_GPIO_Port
+      |                                 ^~~~~~~~~~~~~
+../app/src/task_actuator.c:65:21: note: in expansion of macro 'LED_B_PORT'
+   65 |         {ID_LED_B,  LED_B_PORT,  LED_B_PIN, LED_B_ON,  LED_B_OFF,
+      |                     ^~~~~~~~~~
+../app/inc/board.h:79:33: error: 'LD1_Pin' undeclared here (not in a function); did you mean 'LD2_Pin'?
+   79 | #define LED_B_PIN               LD1_Pin
+      |                                 ^~~~~~~
+../app/src/task_actuator.c:65:34: note: in expansion of macro 'LED_B_PIN'
+   65 |         {ID_LED_B,  LED_B_PORT,  LED_B_PIN, LED_B_ON,  LED_B_OFF,
+      |                                  ^~~~~~~~~
+../app/inc/board.h:91:33: error: 'LD3_GPIO_Port' undeclared here (not in a function); did you mean 'LD2_GPIO_Port'?
+   91 | #define LED_C_PORT              LD3_GPIO_Port
+      |                                 ^~~~~~~~~~~~~
+../app/src/task_actuator.c:67:21: note: in expansion of macro 'LED_C_PORT'
+   67 |         {ID_LED_C,  LED_C_PORT,  LED_C_PIN, LED_C_ON,  LED_C_OFF,
+      |                     ^~~~~~~~~~
+../app/inc/board.h:90:33: error: 'LD3_Pin' undeclared here (not in a function); did you mean 'LD2_Pin'?
+   90 | #define LED_C_PIN               LD3_Pin
+      |                                 ^~~~~~~
+../app/src/task_actuator.c:67:34: note: in expansion of macro 'LED_C_PIN'
+   67 |         {ID_LED_C,  LED_C_PORT,  LED_C_PIN, LED_C_ON,  LED_C_OFF,
+      |                                  ^~~~~~~~~
+../app/inc/board.h:102:33: error: 'LD4_GPIO_Port' undeclared here (not in a function); did you mean 'LD2_GPIO_Port'?
+  102 | #define LED_D_PORT              LD4_GPIO_Port
+      |                                 ^~~~~~~~~~~~~
+../app/src/task_actuator.c:69:21: note: in expansion of macro 'LED_D_PORT'
+   69 |         {ID_LED_D,  LED_D_PORT,  LED_D_PIN, LED_D_ON,  LED_D_OFF,
+      |                     ^~~~~~~~~~
+../app/inc/board.h:101:33: error: 'LD4_Pin' undeclared here (not in a function); did you mean 'LD2_Pin'?
+  101 | #define LED_D_PIN               LD4_Pin
+      |                                 ^~~~~~~
+../app/src/task_actuator.c:69:34: note: in expansion of macro 'LED_D_PIN'
+   69 |         {ID_LED_D,  LED_D_PORT,  LED_D_PIN, LED_D_ON,  LED_D_OFF,
+      |                                  ^~~~~~~~~
+In file included from ../app/src/task_sensor.c:48:
+../app/inc/board.h:75:33: error: 'B2_GPIO_Port' undeclared here (not in a function); did you mean 'B1_GPIO_Port'?
+   75 | #define BTN_B_PORT              B2_GPIO_Port
+      |                                 ^~~~~~~~~~~~
+../app/src/task_sensor.c:66:21: note: in expansion of macro 'BTN_B_PORT'
+   66 |         {ID_BTN_B,  BTN_B_PORT,  BTN_B_PIN,  BTN_B_PRESSED, DEL_BTN_XX_MAX,
+      |                     ^~~~~~~~~~
+../app/inc/board.h:74:33: error: 'B2_Pin' undeclared here (not in a function); did you mean 'B1_Pin'?
+   74 | #define BTN_B_PIN               B2_Pin
+      |                                 ^~~~~~
+../app/src/task_sensor.c:66:34: note: in expansion of macro 'BTN_B_PIN'
+   66 |         {ID_BTN_B,  BTN_B_PORT,  BTN_B_PIN,  BTN_B_PRESSED, DEL_BTN_XX_MAX,
+      |                                  ^~~~~~~~~
+make: *** [app/src/subdir.mk:37: app/src/task_actuator.o] Error 1
+make: *** Waiting for unfinished jobs....
+../app/inc/board.h:86:33: error: 'B3_GPIO_Port' undeclared here (not in a function); did you mean 'B1_GPIO_Port'?
+   86 | #define BTN_C_PORT              B3_GPIO_Port
+      |                                 ^~~~~~~~~~~~
+../app/src/task_sensor.c:68:21: note: in expansion of macro 'BTN_C_PORT'
+   68 |         {ID_BTN_C,  BTN_C_PORT,  BTN_C_PIN,  BTN_C_PRESSED, DEL_BTN_XX_MAX,
+      |                     ^~~~~~~~~~
+../app/inc/board.h:85:33: error: 'B3_Pin' undeclared here (not in a function); did you mean 'B1_Pin'?
+   85 | #define BTN_C_PIN               B3_Pin
+      |                                 ^~~~~~
+../app/src/task_sensor.c:68:34: note: in expansion of macro 'BTN_C_PIN'
+   68 |         {ID_BTN_C,  BTN_C_PORT,  BTN_C_PIN,  BTN_C_PRESSED, DEL_BTN_XX_MAX,
+      |                                  ^~~~~~~~~
+../app/inc/board.h:97:33: error: 'B4_GPIO_Port' undeclared here (not in a function); did you mean 'B1_GPIO_Port'?
+   97 | #define BTN_D_PORT              B4_GPIO_Port
+      |                                 ^~~~~~~~~~~~
+../app/src/task_sensor.c:70:21: note: in expansion of macro 'BTN_D_PORT'
+   70 |         {ID_BTN_D,  BTN_D_PORT,  BTN_D_PIN,  BTN_D_PRESSED, DEL_BTN_XX_MAX,
+      |                     ^~~~~~~~~~
+../app/inc/board.h:96:33: error: 'B4_Pin' undeclared here (not in a function); did you mean 'B1_Pin'?
+   96 | #define BTN_D_PIN               B4_Pin
+      |                                 ^~~~~~
+../app/src/task_sensor.c:70:34: note: in expansion of macro 'BTN_D_PIN'
+   70 |         {ID_BTN_D,  BTN_D_PORT,  BTN_D_PIN,  BTN_D_PRESSED, DEL_BTN_XX_MAX,
+      |                                  ^~~~~~~~~
+make: *** [app/src/subdir.mk:37: app/src/task_sensor.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
 
-19:02:06 Build Finished. 0 errors, 0 warnings. (took 375ms)
+18:19:48 Build Failed. 15 errors, 0 warnings. (took 1s.300ms)
 
